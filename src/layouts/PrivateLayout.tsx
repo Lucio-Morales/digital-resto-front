@@ -1,5 +1,5 @@
 const PrivateLayout = () => {
-  return <div>private layout</div>;
+  return <div className="w-full min-g-screen">private layout</div>;
 };
 
 export default PrivateLayout;
