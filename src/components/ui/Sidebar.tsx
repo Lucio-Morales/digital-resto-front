@@ -28,7 +28,6 @@ const Sidebar = ({ showMenu }) => {
               <RiHome6Line className="text-xl" />
             </a>
           </li>
-
           <li className="hover:bg-zinc-900 p-2 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               href="#"
@@ -37,7 +36,6 @@ const Sidebar = ({ showMenu }) => {
               <RiPercentLine className="text-xl" />
             </a>
           </li>
-
           <li className="hover:bg-zinc-900 p-2 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
               href="#"
