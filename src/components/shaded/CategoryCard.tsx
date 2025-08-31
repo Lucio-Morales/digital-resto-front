@@ -17,7 +17,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ categoryName, src, active }
     `}
     >
       {/* Contenedor de la imagen */}
-      <div className="flex-shrink-0 bg-gray-300 rounded-lg">
+      <div className="flex-shrink-0 bg-gray-300 rounded-xl">
         <img src={src} alt={`Icono de ${categoryName}`} className="w-12 h-12 object-cover rounded-md p-1" />
       </div>
       {/* Nombre de la categoría */}
