@@ -1,4 +1,3 @@
-// import { RiAddLine, RiPieChartLine, RiMenu3Fill, RiUser3Line, RiCloseLine, RiArrowDownSLine } from 'react-icons/ri';
 import { useState } from 'react';
 import Side from './components/ui/Side';
 import Header from './components/ui/Header';
@@ -117,10 +116,59 @@ function App() {
         </div>
 
         {/* PANEL DERECHO  */}
-        <div className="lg:col-span-3 bg-gray-500 fixed lg:static top-0 right-0 w-full h-full">
-          <div className="relative pt-18 p-8 ">
-            <RiCloseLine className="absolute left-4 top-4 p-3 box-content bg-orange-300 rounded-full text-xl" />
-            <h1 className="text-2xl mt-4">Orders #40362</h1>
+        {/* <div className="flex flex-col justify-between lg:col-span-3 bg-[#f9f9f9] fixed lg:static top-0 right-0 w-full h-full z-10">
+          <div className="relative pt-18 p-4">
+            <RiCloseLine className="absolute left-4 top-4 p-3 box-content border-2 border-orange-400 rounded-full text-xl" />
+            <h1 className="text-2xl mt-2 mb-4">Your orders</h1>
+          </div>
+          <div className="bg-orange-200">Products</div>
+          <div className="bg-gray-200">Invoice</div>
+        </div> */}
+        <div className="flex flex-col justify-between p-4 lg:col-span-3 bg-[#f9f9f9] fixed lg:static top-0 right-0 w-full h-full z-10">
+          {/* Header */}
+          <div className="flex items-center justify-between">
+            <h1 className="text-2xl font-semibold">Your orders</h1>
+            <button>
+              <RiCloseLine className="p-2 box-content border-2 border-orange-400 rounded-full text-xl cursor-pointer" />
+            </button>
+          </div>
+
+          {/* Productos (scrollable) */}
+          <div className="flex-1 overflow-y-auto mt-6 mb-6">
+            <div className="space-y-2">
+              <div className="p-4 bg-white rounded shadow">Producto 1</div>
+              <div className="p-4 bg-white rounded shadow">Producto 2</div>
+              <div className="p-4 bg-white rounded shadow">Producto 3</div>
+              <div className="p-4 bg-white rounded shadow">Producto 4</div>
+              <div className="p-4 bg-white rounded shadow">Producto 5</div>
+              <div className="p-4 bg-white rounded shadow">Producto 6</div>
+              <div className="p-4 bg-white rounded shadow">Producto 7</div>
+              <div className="p-4 bg-white rounded shadow">Producto 8</div>
+              <div className="p-4 bg-white rounded shadow">Producto 9</div>
+              <div className="p-4 bg-white rounded shadow">Producto 10</div>
+            </div>
+          </div>
+
+          {/* Footer (Invoice + Botón) */}
+          <div className="flex-shrink-0 ">
+            <div className="p-6 rounded-xl bg-gray-300 border-2 border-dashed border-gray-400">
+              <h2 className="text-lg font-medium">Invoice</h2>
+              <div className="mt-4 space-y-2">
+                <p className="flex justify-between">
+                  <span>Subtotal:</span> <span>$100.00</span>
+                </p>
+                <p className="flex justify-between">
+                  <span>Tax:</span> <span>$23.45</span>
+                </p>
+                <p className="flex justify-between font-semibold">
+                  <span>Total:</span> <span>$123.45</span>
+                </p>
+              </div>
+            </div>
+            {/* BOTON DE PAGAR */}
+            <button className="w-full uppercase bg-orange-500 text-white font-semibold mt-4 py-4 rounded-xl hover:bg-orange-600 transition">
+              Pagar
+            </button>
           </div>
         </div>
       </main>

@@ -8,7 +8,7 @@ interface MenuMobileProps {
 
 const MenuMobile = ({ showMenu, toggleMenu, toggleInvoice }: MenuMobileProps) => {
   return (
-    <nav className="bg-zinc-500 lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-300 py-2 px-8 flex items-center justify-between  z-50">
+    <nav className="bg-zinc-500 lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-300 py-2 px-8 flex items-center justify-between z-10">
       <button className="p-2">
         <RiUser3Line />
       </button>
