@@ -12,7 +12,7 @@ const NavLink = ({ icon, label, href, active }: NavLinkProps) => {
     <li className="p-1">
       <a
         href={href}
-        className={`text-sm font-semibold flex items-center gap-4 py-3 px-4 rounded-lg transition-colors border
+        className={`text-sm font-bold flex items-center gap-4 py-3 px-4 rounded-lg transition-colors border
           ${
             active
               ? 'bg-orange-100 text-orange-500 border-orange-500'
