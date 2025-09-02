@@ -1,23 +1,23 @@
 import { RiCloseLine } from 'react-icons/ri';
 import CartProduct from './CartProduct';
+import { SlCreditCard } from 'react-icons/sl';
 
 const SecondPanel = ({ showInvoice, toggleInvoice }) => {
   return (
     <aside
-      className={`p-4 fixed w-full h-full top-0 bg-[#f9f9f9] z-50 transition-all
-      ${showInvoice ? 'right-0' : '-right-full'}
-      lg:col-span-3 
-      lg:sticky lg:top-16                 /* 64px: altura del header en desktop */
-      lg:max-h-[calc(100vh-64px)]         /* limita el alto del aside en desktop */
-      lg:w-auto lg:h-auto`} /* anula el h-full del modo mobile */
+      className={`
+    fixed top-0 z-50 h-full w-full transition-all
+    ${showInvoice ? 'right-0' : '-right-full'}
+
+    md:w-96 md:top-16 md:h-[calc(100vh-64px)]
+    lg:mt-2 lg:col-span-3 lg:sticky lg:top-16 lg:max-h-[calc(96vh-64px)] lg:w-auto lg:h-auto
+  `}
     >
-      <div className="flex flex-col h-full min-h-0">
-        {' '}
-        {/* min-h-0 es CLAVE */}
+      <div className="flex md:rounded-xl p-3 flex-col h-full min-h-0 bg-[#f9f9f9]">
         {/* Header */}
         <div className="flex items-center justify-between shrink-0">
           <h1 className="text-xl font-medium">Your orders</h1>
-          <button className="md:hidden">
+          <button className="lg:hidden">
             <RiCloseLine
               onClick={toggleInvoice}
               className="p-2 box-content border-2 border-orange-400 rounded-full text-xl cursor-pointer"
@@ -42,10 +42,12 @@ const SecondPanel = ({ showInvoice, toggleInvoice }) => {
         </div>
         {/* Footer */}
         <div className="shrink-0">
-          <div className="p-6 rounded-xl bg-gray-300 border-2 border-dashed border-gray-400">
-            <h2 className="text-xs text-zinc-600 font-medium">Payment summary</h2>
-            <div className="mt-4 space-y-2">
-              <p className="flex justify-between">
+          <div className="p-3 rounded-xl bg-gray-300 border-2 border-dashed border-gray-400">
+            <h2 className="text-sm pb-2 text-zinc-600 font-medium border-b-2 border-dashed border-gray-400">
+              Payment summary
+            </h2>
+            <div className="mt-2 space-y-2">
+              <p className="flex justify-between text-sm">
                 <span>Subtotal:</span> <span>$100.00</span>
               </p>
               <p className="flex justify-between">
@@ -57,7 +59,8 @@ const SecondPanel = ({ showInvoice, toggleInvoice }) => {
             </div>
           </div>
 
-          <button className="w-full uppercase bg-orange-500 text-white font-semibold mt-4 py-4 rounded-xl hover:bg-orange-600 transition">
+          <button className="w-full flex items-center justify-center uppercase text-sm bg-orange-500 text-white font-semibold mt-2 py-3 rounded-xl hover:bg-orange-600 transition cursor-pointer">
+            <SlCreditCard className="mr-2 w-4 h-4" />
             Pagar
           </button>
         </div>

@@ -85,6 +85,66 @@ const CentralPanel = () => {
             isWishlisted={false}
             isSelected={false}
           />
+          <ProductCard
+            imageSrc="/burger-6.png"
+            productName="Delicious Burger"
+            currentPrice="$12.99"
+            oldPrice="$15.00"
+            rating={4.5}
+            reviews={245}
+            isWishlisted={true}
+            isSelected={true}
+          />
+          <ProductCard
+            imageSrc="/burger-2.png"
+            productName="Spicy Pizza"
+            currentPrice="$18.50"
+            oldPrice="$20.00"
+            rating={5}
+            reviews={310}
+            isWishlisted={false}
+            isSelected={false}
+          />
+          <ProductCard
+            imageSrc="/burger-3.png"
+            productName="Delicious Burger"
+            currentPrice="$12.99"
+            oldPrice="$15.00"
+            rating={4.5}
+            reviews={245}
+            isWishlisted={true}
+            isSelected={true}
+          />
+          <ProductCard
+            imageSrc="/burger-4.png"
+            productName="Spicy Pizza"
+            currentPrice="$18.50"
+            oldPrice="$20.00"
+            rating={5}
+            reviews={310}
+            isWishlisted={false}
+            isSelected={false}
+          />
+          <ProductCard
+            imageSrc="/burger-5.png"
+            productName="Delicious Burger"
+            currentPrice="$12.99"
+            oldPrice="$15.00"
+            rating={4.5}
+            reviews={245}
+            isWishlisted={true}
+            isSelected={true}
+          />
+          <ProductCard
+            imageSrc="/burger-2.png"
+            productName="Spicy Pizza"
+            currentPrice="$18.50"
+            oldPrice="$20.00"
+            rating={5}
+            reviews={310}
+            isWishlisted={false}
+            isSelected={false}
+          />
         </div>
       </div>
     </div>
