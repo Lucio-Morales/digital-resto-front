@@ -5,3 +5,11 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
 }
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hidden {
+  -ms-overflow-style: none; /* IE y Edge */
+  scrollbar-width: none; /* Firefox */
+}
