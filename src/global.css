@@ -1,7 +1,12 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-Bg-gray: #e4e4e7;
+  --color-Bg-white: #f9f9f9;
+}
+
 body {
-  background-color: #18181b;
+  background-color: #e4e4e7;
   font-family: 'Montserrat';
   font-weight: 400;
 }
